@@ -1,0 +1,62 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.08rem solid black;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 1;
+}
+
+.header-link{
+     display: flex;
+     justify-content: flex-start;
+}
+
+.logo {
+  font-size: 1.3rem;
+  margin-right: 3rem;
+  font-weight: 600;
+}
+
+
+
+.container {
+  display: flex;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: column;
+  border-right: 0.0625rem solid black;
+  height: calc(100vh - 3.6125rem);
+  margin-right: 0.5rem;
+  position: sticky;
+  top: 3rem;
+  background-color: white;
+  width: 14rem;
+}
+
+.navigation-bar-icon {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.navigation-bar-icon:hover {
+  background-color: orangered;
+}
