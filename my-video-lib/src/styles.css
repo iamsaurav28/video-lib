@@ -1,5 +1,7 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
 
+
+
 * {
   padding: 0;
   margin: 0;
@@ -59,4 +61,46 @@ header {
 
 .navigation-bar-icon:hover {
   background-color: orangered;
+}
+
+
+
+
+.video-container {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  max-width: 22%;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.content-link,
+.header-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content-details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.content-details-title {
+  font-weight: 600;
+}
+
+.watch-later-content-menu-button,
+.content-details-menu-button{
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  padding: 5px 8px;
 }
