@@ -17,7 +17,7 @@ export const NavigationBar = () => {
       <div className="navigation-bar-icon">
         <i className="icon fas fa-compass"></i>Explore
       </div>
-      <hr style={{ margin: "0.5rem 0" }} />
+
 
       <div className="navigation-bar-icon">
         <i className="icon fas fa-photo-video"></i>Library
@@ -52,8 +52,6 @@ export const NavigationBar = () => {
           <i className="icon fas fa-thumbs-up"></i>Liked videos
         </div>
       </NavLink>
-
-      <hr style={{ margin: "0.5rem 0" }} />
     </div>
   );
 };

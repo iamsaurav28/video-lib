@@ -1,7 +1,5 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
 
-
-
 * {
   padding: 0;
   margin: 0;
@@ -31,8 +29,10 @@ header {
 
 .logo {
   font-size: 1.3rem;
-  margin-right: 3rem;
   font-weight: 600;
+  position: relative;
+  display: flex;
+  right: 35rem;
 }
 
 
@@ -44,12 +44,10 @@ header {
 .navigation-bar {
   display: flex;
   flex-direction: column;
-  border-right: 0.0625rem solid black;
   height: calc(100vh - 3.6125rem);
-  margin-right: 0.5rem;
   position: sticky;
   top: 3rem;
-  background-color: white;
+  background-color: darkorchid;
   width: 14rem;
 }
 
@@ -70,6 +68,7 @@ header {
   padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
+  background-color: darkorchid;
 }
 
 .content {
@@ -96,11 +95,188 @@ header {
   font-weight: 600;
 }
 
+
 .watch-later-content-menu-button,
-.content-details-menu-button{
+.content-details-menu-button,
+.liked-video-content-menu-button,
+.history-content-menu-button {
   background-color: inherit;
   border: none;
   cursor: pointer;
   height: 25px;
   padding: 5px 8px;
+}
+
+.video-player-details-button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.watch-later-content-menu-button {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+.liked-video-content-menu-button {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+.content-details-menu-button:active {
+  border: 2px solid lightgrey;
+  border-radius: 2.2rem;
+  background-color: lightgrey;
+}
+
+.watch-later-content-menu-button:active {
+  border: 2px solid lightgrey;
+  border-radius: 2.2rem;
+  background-color: grey;
+}
+
+.liked-video-content-menu-button:active {
+  border: 2px solid lightgrey;
+  border-radius: 2.2rem;
+  background-color: grey;
+}
+
+.video-player-details-button:active {
+  border: 2px solid lightgrey;
+  border-radius: 2.2rem;
+  background-color: lightgrey;
+}
+
+.video-player {
+  position: relative;
+  margin-top: 2rem;
+  max-width: 60%;
+  left: 6rem;
+  text-align: left;
+}
+
+.video-player-details {
+  position: relative;
+}
+
+.video-player-details-title {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.menu-listbox {
+  padding: 0.25rem 0;
+  position: absolute;
+  background-color: white;
+  border-radius: 0.25rem;
+  border: 2px solid whitesmoke;
+  z-index: 1;
+}
+
+.vid-menu {
+  width: 15rem;
+  top: 2.5rem;
+  left: 3rem;
+}
+
+.wl-menu {
+  bottom: -2.5rem;
+}
+.lv-menu {
+  bottom: -4.5rem;
+}
+.wl-menu,
+.lv-menu {
+  width: 16rem;
+  right: 0.5rem;
+}
+
+.s-menu,
+.h-menu {
+  top: 2rem;
+  right: 4.5rem;
+}
+
+.menu-listbox-item {
+  padding-left: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  cursor: pointer;
+}
+
+.menu-listbox-item:hover {
+  background-color: lightgrey;
+}
+
+.menu-listbox-item:active {
+  background-color: grey;
+}
+
+.watch-later-content,
+.liked-video-content {
+  display: flex;
+  padding: 0.5rem 0;
+  position: relative;
+  text-align: left;
+  width: 75%;
+}
+
+.watch-later-content:hover {
+  background-color: lightgrey;
+}
+
+.liked-video-content:hover {
+  background-color: lightgrey;
+}
+
+.watch-later-content-img,
+.liked-video-content-img {
+  width: 7.5rem;
+  margin-right: 0.5rem;
+}
+
+.watch-later-container,
+.liked-videos-container {
+  margin: 1rem auto;
+}
+
+.toast {
+  width: 16%;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: var(--toast-bgcolor);
+  padding: 0.25rem 0.5rem;
+  color: var(--toast-color);
+}
+
+
+.history-container {
+  position: relative;
+  left: 4rem;
+  text-align: left;
+}
+
+.search-videos-container {
+  margin-top: 3rem;
+}
+
+.history-content,
+.search-content {
+  display: flex;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.history-content {
+  width: 60%;
+}
+
+.history-content-img {
+  width: 15rem;
+  height: auto;
+  margin-right: 1rem;
 }

@@ -12,7 +12,7 @@ export const Container = () => {
       <NavigationBar />
       <VideoContainer />
       <div style={{ visibility: videoToastVisibility }} className="toast">
-        <div className="toast__body">{videoToastText}</div>
+        <div className="toast-body">{videoToastText}</div>
       </div>
     </div>
   );
