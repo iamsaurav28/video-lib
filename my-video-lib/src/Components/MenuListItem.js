@@ -25,7 +25,7 @@ export const MenuListItem = ({
           toastDispatch({ type: toggleAction });
         }, 3000);
       }}
-      className="menu-listbox__item"
+      className="menu-listbox-item"
     >
       <i className={iconClass}></i>
       {itemName}
